@@ -16,17 +16,17 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
 
-title: Java - Les Points Essentiels
+title: Presentation Title
 class: text-center
 ---
 
-# Java - Les Points Essentiels
+# Presentation Title
 
-ECAM Rennes
+subtitle
 
-Patrice GODARD
+presenter name
 
-patrice.godard@orange.com
+presenter email
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -35,7 +35,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# Programme du Cours
+# Table of Contents
 
 <Toc minDepth="1" maxDepth="1"></Toc>
 
@@ -59,7 +59,7 @@ transition: fade-out
 import java.util.List;
 import java.util.ArrayList;
 
-java.util.List<String> liste = new java.util.ArrayList<String>();
+java.util.List<String> list = new java.util.ArrayList<String>();
 ```
 
 ```java
@@ -67,21 +67,21 @@ java.util.List<String> liste = new java.util.ArrayList<String>();
 import java.util.List;
 import java.util.ArrayList;
 
-java.util.List<String> liste = new java.util.ArrayList<String>();
-liste.add("un objet");
-liste.add("un autre objet");
+java.util.List<String> list = new java.util.ArrayList<String>();
+list.add("an object");
+list.add("another objet");
 ```
 
 ```java
 import java.util.List;
 import java.util.ArrayList;
 
-java.util.List<String> liste = new java.util.ArrayList<String>();
-liste.add("un objet");
-liste.add("un autre objet");
+java.util.List<String> list = new java.util.ArrayList<String>();
+list.add("an object");
+list.add("another object");
 
-System.out.println("second élément de la liste: " + liste.get(1));
-liste.clear();
+System.out.println("second element of the list: " + list.get(1));
+list.clear();
 
 ```
 ````
@@ -90,11 +90,13 @@ liste.clear();
 
 # Code 2
 
+This code section is editable (but not runnable...yet)
+
 ```java{monaco}
 import java.util.List;
 import java.util.ArrayList;
 
-java.util.List<String> liste = new java.util.ArrayList<String>();
+java.util.List<String> list = new java.util.ArrayList<String>();
 ```
 
 ---
@@ -102,15 +104,15 @@ java.util.List<String> liste = new java.util.ArrayList<String>();
 # Clicks Animations
 
 <v-click>
-Ceci est <span v-mark.red="1">très important</span>
+This is <span v-mark.red="1">very important</span>
 </v-click>
 <v-click>
-Ceci <span v-mark.circle.orange="2">aussi</span>
+This is <span v-mark.circle.orange="2">too</span>
 </v-click>
 
 ---
 
-# json annoté
+# Annotated JSON
 
 <style>
 /* Add your custom styles here */
@@ -148,7 +150,7 @@ layout: image
 image: https://logos-marques.com/wp-content/uploads/2021/03/Android-Logo.png
 
 ---
-# 3 column code
+# background image with component overlay on click
 
 <v-click>
 <div
